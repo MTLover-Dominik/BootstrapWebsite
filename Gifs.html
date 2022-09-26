@@ -1,0 +1,218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+
+<head>
+    <link rel="icon" type="image/x-icon" href="icon.jpg"/>
+    <style>
+    body {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    #myButton {
+        width: 100%;
+        height: 50px;
+    }
+    .titleOfTheSite {
+        background-color: #838282;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    #startNavBar {
+        margin-left: 1%;
+    }
+    #contentContainer {
+        background-color: #838282;
+        padding-bottom: 1%;
+    }
+    .contentHorizontalRule {
+        margin-left: 2%;
+        margin-right: 2%;
+        border: solid black 1px;
+    }
+    .breadcrumbsDiv {
+        background-color: #C7C5C5;
+        padding-bottom: 10px;
+    }
+    #breadcrumbs {
+        margin-left: 1%;
+    }
+    #headlineAndInfo {
+        text-align: center;
+        background-color: #838282;
+    }
+    .listOfCards {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        background-color: #838282;
+    }
+    .card {
+        margin-top: 1%;
+    }
+    .horizontalRuleFooter {
+        border: solid black 1px;
+    }
+    #footer {
+        display: flex;
+        justify-content: space-around;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 2%;
+    }
+    .ankerFooter {
+        color: black;
+    }
+    .breaks {
+        background-color: #838282;
+    }
+    </style>
+    <title>Gallery - Gifs</title>
+
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta name="keywords" content="" />
+    <meta name="generator" content="Webocton - Scriptly (www.scriptly.de)" />
+
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous"/>
+</head>
+
+<body style="background-color: #D4D0D0;">
+<div class="titleOfTheSite">
+  <h1 align="center"><u>Welcome to the Gif list</u></h1>
+</div>
+
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid" id="startNavBar">
+    <a class="navbar-brand" href="">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Gallery
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="Pictures1.html">Pictures</a></li>
+            <li><a class="dropdown-item" href="">Gifs</a></li>
+            <li><hr class="dropdown-divider"/></li>
+            <li><a class="dropdown-item" href="Videos.html">Videos</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Contact.html">Contact</a>
+        </li>
+        <!--<li class="nav-item">
+          <a class="nav-link disabled">Disabled</a>
+        </li>-->
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<div class="breaks">
+  <br />
+</div>
+
+<div style="background-color: #C7C5C5">
+  <br />
+</div>
+
+<div id="contentContainer">
+<!-- breadcrumbs -->
+  <div class="breadcrumbsDiv">
+    <nav aria-label="breadcrumb" id="breadcrumbs">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Homepage</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Gallery - Gifs</li>
+      </ol>
+    </nav>
+  </div>
+
+<!-- Galery Headline and Info -->
+  <div id="headlineAndInfo">
+    <h2>This is the Gif list</h2>
+    <br />
+    <p>Here you can see all Gifs of our Collection</p>
+    <br />
+    <hr class="contentHorizontalRule"/>
+  </div>
+
+<!-- List Of Cards -->
+  <div class="listOfCards">
+    <div class="card" style="width: 18rem;">
+    <img src="graduationGif.gif" class="card-img-top" alt="graduation"/>
+    <div class="card-body">
+      <h5 class="card-title">Graduation</h5>
+      <a href="graduationGif.gif" class="btn btn-primary">Open</a>
+    </div>
+  </div>
+    <div class="card" style="width: 18rem;">
+    <img src="marriageGif.gif" class="card-img-top" alt="marriage"/>
+    <div class="card-body">
+      <h5 class="card-title">Marriage</h5>
+      <a href="marriageGif.gif" class="btn btn-primary">Open</a>
+    </div>
+  </div>
+    <div class="card" style="width: 18rem;">
+    <img src="birthdayGif.gif" class="card-img-top" alt="birthday"/>
+    <div class="card-body">
+      <h5 class="card-title">Birthday</h5>
+      <a href="birthdayGif.gif" class="btn btn-primary">Open</a>
+    </div>
+  </div>
+    <div class="card" style="width: 18rem;">
+    <img src="weihnachtenGif.gif" class="card-img-top" alt="christmas"/>
+    <div class="card-body">
+      <h5 class="card-title">Christmas</h5>
+      <a href="weihnachtenGif.gif" class="btn btn-primary">Open</a>
+    </div>
+  </div>
+  </div>
+  <hr class="contentHorizontalRule"/>
+</div>
+<!-- End contentContainer -->
+
+
+<!-- Footer -->
+<div class="titleOfTheSite" id="footer">
+  <div>
+    <h5><a href="Infos.html" class="ankerFooter">About us</a></h5>
+    <p><a href="Careers.html" class="ankerFooter">Career</a></p>
+    <p><a href="locations.html" class="ankerFooter">Our Locations</a></p>
+  </div>
+  <hr class="horizontalRuleFooter"/>
+  <div>
+    <h5>Corona Information</h5>
+    <p><a href="News.html" class="ankerFooter">Latest News</a></p>
+  </div>
+  <hr class="horizontalRuleFooter"/>
+  <div>
+    <h5>Contact us</h5>
+    <p><a href="Contact.html" class="ankerFooter">How to contact us</a></p>
+  </div>
+  <div>
+    <p>Copyright &copy; 2022 Dominik G&ouml;tz</p>
+  </div>
+</div>
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
+
+</script>
+</body>
+</html>

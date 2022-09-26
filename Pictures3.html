@@ -1,0 +1,285 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+
+<head>
+    <link rel="icon" type="image/x-icon" href="icon.jpg"/>
+    <style>
+    body {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    #myButton {
+        width: 100%;
+        height: 50px;
+    }
+    .titleOfTheSite {
+        background-color: #838282;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    #startNavBar {
+        margin-left: 1%;
+    }
+    #contentContainer {
+        background-color: #838282;
+    }
+    .contentHorizontalRule {
+        margin-left: 2%;
+        margin-right: 2%;
+        border: solid black 1px;
+    }
+    .breadcrumbsDiv {
+        background-color: #C7C5C5;
+        padding-bottom: 10px;
+    }
+    #breadcrumbs {
+        margin-left: 1%;
+    }
+    #headlineAndInfo {
+        text-align: center;
+        background-color: #838282;
+    }
+    .listOfCards {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        background-color: #838282;
+    }
+    .pagination {
+        display: flex;
+        justify-content: center;
+        background-color: #838282;
+    }
+    .horizontalRuleFooter {
+        border: solid black 1px;
+    }
+    #footer {
+        display: flex;
+        justify-content: space-around;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 2%;
+    }
+    .ankerFooter {
+        color: black;
+    }
+    .breaks {
+        background-color: #838282;
+    }
+    </style>
+    <title>Gallery - Pictures 3</title>
+
+    <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta name="keywords" content="" />
+    <meta name="generator" content="Webocton - Scriptly (www.scriptly.de)" />
+
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous"/>
+</head>
+
+<body style="background-color: #D4D0D0;">
+<div class="titleOfTheSite">
+  <h1 align="center"><u>Welcome to the picture gallery - page 3</u></h1>
+</div>
+
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid" id="startNavBar">
+    <a class="navbar-brand" href="">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Gallery
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="Pictures1.html">Pictures</a></li>
+            <li><a class="dropdown-item" href="Gifs.html">Gifs</a></li>
+            <li><hr class="dropdown-divider"/></li>
+            <li><a class="dropdown-item" href="Videos.html">Videos</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Contact.html">Contact</a>
+        </li>
+        <!--<li class="nav-item">
+          <a class="nav-link disabled">Disabled</a>
+        </li>-->
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<div class="breaks">
+  <br />
+</div>
+
+<!-- Slider -->
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="slider1.jpg" class="d-block w-100" alt="slider 1"/>
+    </div>
+    <div class="carousel-item">
+      <img src="pictureSlider3.jpg" class="d-block w-100" alt="slider 2"/>
+    </div>
+    <div class="carousel-item">
+      <img src="slider2.jpg" class="d-block w-100" alt="slider 3"/>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!-- End Slider -->
+
+
+<div style="background-color: #C7C5C5">
+  <br />
+</div>
+
+<div id="contentContainer">
+<!-- breadcrumbs -->
+  <div class="breadcrumbsDiv">
+    <nav aria-label="breadcrumb" id="breadcrumbs">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Homepage</a></li>
+        <li class="breadcrumb-item"><a href="Pictures1.html">Gallery - Pictures</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Page 3</li>
+      </ol>
+    </nav>
+  </div>
+<!-- End Breadcrumbs -->
+
+
+<!-- Galery Headline and Info -->
+  <div id="headlineAndInfo">
+    <h2>This is the 3. Page of the Picture Gallery</h2>
+    <br />
+    <p>Here in the gallery can you find a list of pictures, which are spread over several pages. We hope you enjoy our collection of pictures.</p>
+    <br />
+    <hr class="contentHorizontalRule"/>
+  </div>
+<!-- End Headline and Info -->
+
+<!-- List Of Cards -->
+<div class="listOfCards">
+  <div class="card" style="width: 18rem;">
+    <img src="pictureGraduation.jpg" class="card-img-top" alt="graduation"/>
+    <div class="card-body">
+      <h5 class="card-title">Graduation</h5>
+      <p class="card-text">Pictures of Highschool Graduation</p>
+      <a href="pictureGraduation.jpg" class="btn btn-primary">Open</a>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <img src="pictureMarriage.jpg" class="card-img-top" alt="marriage"/>
+    <div class="card-body">
+      <h5 class="card-title">Marriage</h5>
+      <p class="card-text">Pictures of Marriage</p>
+      <a href="pictureMarriage.jpg" class="btn btn-primary">Open</a>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <img src="pictureChildBirthday.jpg" class="card-img-top" alt="birthday"/>
+    <div class="card-body">
+      <h5 class="card-title">Timmy's Birthday</h5>
+      <p class="card-text">Pictures of Timmy's Birthday</p>
+      <a href="pictureChildBirthday.jpg" class="btn btn-primary">Open</a>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <img src="pictureXMas.jpg" class="card-img-top" alt="christmas"/>
+    <div class="card-body">
+      <h5 class="card-title">Christmas</h5>
+      <p class="card-text">Pictures of Christmas 2021</p>
+      <a href="pictureXMas.jpg" class="btn btn-primary">Open</a>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;">
+    <img src="pictureVacation.jpg" class="card-img-top" alt="vacation"/>
+    <div class="card-body">
+      <h5 class="card-title">Vacation</h5>
+      <p class="card-text">Pictures of Beach Vacation 2020</p>
+      <a href="pictureVacation.jpg" class="btn btn-primary">Open</a>
+    </div>
+  </div>
+</div>
+<hr class="contentHorizontalRule"/>
+
+
+<!-- Pagination -->
+<div class="pagination">
+  <nav aria-label="Page navigation example">
+    <ul class="pagination">
+      <li class="page-item">
+        <a class="page-link" href="Pictures2.html" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+        </a>
+      </li>
+      <li class="page-item"><a class="page-link" href="Pictures1.html">1</a></li>
+      <li class="page-item"><a class="page-link" href="Pictures2.html">2</a></li>
+      <li class="page-item"><a class="page-link">3</a></li>
+      <li class="page-item">
+        <a class="page-link" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+</div>
+
+<!-- Footer -->
+<div class="titleOfTheSite" id="footer">
+  <div>
+    <h5><a href="Infos.html" class="ankerFooter">About us</a></h5>
+    <p><a href="Careers.html" class="ankerFooter">Career</a></p>
+    <p><a href="locations.html" class="ankerFooter">Our Locations</a></p>
+  </div>
+  <hr class="horizontalRuleFooter"/>
+  <div>
+    <h5>Corona Information</h5>
+    <p><a href="News.html" class="ankerFooter">Latest News</a></p>
+  </div>
+  <hr class="horizontalRuleFooter"/>
+  <div>
+    <h5>Contact us</h5>
+    <p><a href="Contact.html" class="ankerFooter">How to contact us</a></p>
+  </div>
+  <div>
+    <p>Copyright &copy; 2022 Dominik G&ouml;tz</p>
+  </div>
+</div>
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
+
+</script>
+</body>
+</html>
