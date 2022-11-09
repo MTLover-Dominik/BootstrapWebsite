@@ -1,0 +1,140 @@
+body {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.titleOfTheSite {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: center;
+}
+#startNavBar {
+    margin-left: 1%;
+}
+#contentContainer {
+    /*background-color: #838282;*/
+    background-color: white;
+    padding-bottom: 1%;
+}
+.buttonMyCode {
+    background-color: #C7C5C5;
+}
+#myButton {
+    width: 100%;
+    height: auto;
+    padding-bottom: 5px;
+    border-radius: 12px;
+}
+.listOfCards {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /*background-color: #838282;*/
+    background-color: white;
+}
+.card {
+    margin-top: 1%;
+}
+.breadcrumbsDiv {
+    /*background-color: #C7C5C5;*/
+    background-color: white;
+    padding-bottom: 10px;
+}
+#breadcrumbs {
+    margin-left: 1%;
+}
+.horizontalRuleFooter {
+    border: solid black 1px;
+}
+#bodySite {
+    /*background-color: #D4D0D0;*/
+    background-color: white;
+}
+#header {
+    /*background-color: #838282;*/
+    background-color: white;
+}
+#footer {
+    /*background-color: #838282;*/
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 2%;
+}
+.ankerFooter {
+    color: black;
+}
+.activeSite {
+    pointer-events: none;
+}
+.breaks {
+    /*background-color: #838282;*/
+    background-color: white;
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    background-color: #838282;
+}
+.contentHorizontalRule {
+    margin-left: 2%;
+    margin-right: 2%;
+    border: solid black 1px;
+}
+#headlineAndInfo {
+    text-align: center;
+    background-color: #838282;
+}
+#notAvailable {
+    text-align: center;
+    padding: 1%;
+}
+#addressContainer {
+    display: flex;
+    justify-content: center;
+}
+#addressItem {
+    text-align: center;
+}
+#locationMapItem {
+    display: flex;
+    justify-content: center;
+}
+#mapCard {
+    text-align: center;
+}
+#information {
+    display: flex;
+    justify-content: center;
+}
+.colorMode {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    border: outset 10px darkgray;
+    position: fixed;
+    background-color: grey;
+    z-index: 1000;
+}
+.colorModeArea {
+    display: flex;
+    margin-left: 30%;
+    margin-right: 10px;
+}
+.firstHeader1 {
+    text-decoration: underline;
+    text-align: center;
+    align-self: center;
+    margin-left: 30%;
+}
+#navigationBar {
+    background-color: white;
+}
+.searchButton {
+    background-color: darkgreen !important;
+    color: white !important;
+}
