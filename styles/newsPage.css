@@ -1,0 +1,11 @@
+.firstHeader1 {
+    text-decoration: underline;
+    text-align: center;
+    align-self: center;
+    margin-left: 32%;
+}
+.colorModeArea {
+    display: flex;
+    margin-left: 30%;
+    margin-right: 2%;
+}

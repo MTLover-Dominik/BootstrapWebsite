@@ -1,14 +1,19 @@
+let doesHomepageButtonExist = !!document.getElementById('myButton');
+let doesInfoAndHeadlineExist = !!document.getElementById('headlineAndInfo');
+
 let buttonHomepage = document.getElementById('myButton');
 let isDarkModeOn = false;
 let darkModeChanger = document.getElementById('modeChanger');
-
+let infoAndHeadline = document.getElementById('headlineAndInfo');
 let siteHeader = document.getElementById('header');
 let siteFooter = document.getElementById('footer');
 let navigationBar = document.getElementById('navigationBar');
 let contentContainer = document.getElementById('contentContainer');
+
 let spaces = document.getElementsByClassName('breaks');
 let cardList = document.getElementsByClassName('listOfCards');
 let breadCrumb = document.getElementsByClassName('breadcrumbsDiv');
+let pages = document.getElementsByClassName('pagination');
 
 
 darkModeChanger.addEventListener('click', changeToDarkmode);
@@ -30,6 +35,13 @@ function changeToDarkmode () {
         for (let i = 0; i < breadCrumb.length; i++) {
             breadCrumb[i].style.backgroundColor = '#C7C5C5';
         }
+        for (let i = 0; i < pages.length; i++) {
+            pages[i].style.backgroundColor = '#838282';
+        }
+        if (doesInfoAndHeadlineExist === true) {
+            infoAndHeadline.style.backgroundColor = '#838282';
+            console.log('headlineAndInfo ist vorhanden');
+        }
         darkModeChanger.setAttribute('src', 'images/lightmode.png');
         return
     }
@@ -49,11 +61,20 @@ function changeToDarkmode () {
         for (let i = 0; i < breadCrumb.length; i++) {
             breadCrumb[i].style.backgroundColor = 'white';
         }
+        for (let i = 0; i < pages.length; i++) {
+            pages[i].style.backgroundColor = 'white';
+        }
+        if (doesInfoAndHeadlineExist === true) {
+            infoAndHeadline.style.backgroundColor = 'white';
+            console.log('headlineAndInfo ist vorhanden');
+        }
         darkModeChanger.setAttribute('src', 'images/nightmode.png');
     }
 }
 
-buttonHomepage.addEventListener( 'click' , ALARM );
+if (doesHomepageButtonExist === true) {
+    buttonHomepage.addEventListener( 'click' , ALARM );    //schauen
+}
 
 function ALARM () {
     window.alert('I Bims \n Un du bimst nun gehackt!');
