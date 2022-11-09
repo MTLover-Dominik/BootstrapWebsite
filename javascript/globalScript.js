@@ -79,3 +79,16 @@ if (doesHomepageButtonExist === true) {
 function ALARM () {
     window.alert('I Bims \n Un du bimst nun gehackt!');
 }
+
+
+//modal for pictures --> Still working
+
+function modalAppearance() {
+    modal.style.display = "flex";
+    modalText.innerHTML = "You Lost! You ate " + appleCounter + " Apples. <br> The size of your snake was: " + size + ".<br> You died because of: " + deathReason;
+    modalCloseButton.onclick = function () {
+        modal.style.display = "none";
+    }
+    modalResetButton.onclick = function () {
+    }
+}

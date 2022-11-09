@@ -1,0 +1,22 @@
+.modals {
+    /*display: none;*/
+    z-index: 100000;
+    /*justify-content: space-evenly;*/
+}
+#modal {
+
+}
+.modalsContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#modalContent {
+
+}
+
+.modalButtons {
+
+}
+
+/*add things to macke the modal work*/
