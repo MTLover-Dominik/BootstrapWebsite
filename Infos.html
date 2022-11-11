@@ -4,7 +4,7 @@
 <head>
     <link rel="icon" type="image/x-icon" href="/images/icons/icon.jpg"/>
     <link href="styles/origin.css" type="text/css" rel="stylesheet">
-
+    <link href="styles/infoPage.css" type="text/css" rel="stylesheet">
     <title>Information</title>
 
     <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1" />
@@ -17,54 +17,99 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous"/>
 </head>
 
-<body style="background-color: #D4D0D0;">
-<div class="titleOfTheSite">
-  <h1 align="center"><u>Welcome to our information page</u></h1>
+<body id="bodySite">
+<div class="titleOfTheSite" id="header">
+  <h1 class="firstHeader1">Welcome to our information page</h1>
+  <div class="colorModeArea">
+    <img src="images/nightmode.png" alt="Change to darkmode" class="colorMode" id="modeChanger">
+  </div>
 </div>
 
-<!-- navbar -->
-<nav class="navbar navbar-expand-lg bg-light">
-  <div class="container-fluid" id="startNavBar">
-    <a class="navbar-brand" href="">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Gallery
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="Pictures1.html">Pictures</a></li>
-            <li><a class="dropdown-item" href="Gifs.html">Gifs</a></li>
-            <li><hr class="dropdown-divider"/></li>
-            <li><a class="dropdown-item" href="Videos.html">Videos</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="Contact.html">Contact</a>
-        </li>
-        <!--<li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
-        </li>-->
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
-  </div>
-</nav>
-
 <div class="breaks">
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg bg-light" id="navigationBar">
+    <div class="container-fluid startNavBar">
+      <a class="navbar-brand">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Gallery
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="Pictures1.html">Pictures</a></li>
+              <li><a class="dropdown-item" href="Gifs.html">Gifs</a></li>
+              <li><hr class="dropdown-divider"/></li>
+              <li><a class="dropdown-item" href="Videos.html">Videos</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Contact.html">Contact</a>
+          </li>
+          <!--<li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>-->
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2 searchBar" type="search" placeholder="Search" aria-label="Search"/>
+          <a href="search.html">
+            <button class="btn btn-outline-success searchButton" type="button">Search</button>
+          </a>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <nav class="navbar navbar-expand-lg bg-light" id="navigationBarSticky">
+    <div class="container-fluid startNavBar">
+      <a class="navbar-brand">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Gallery
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="Pictures1.html">Pictures</a></li>
+              <li><a class="dropdown-item" href="Gifs.html">Gifs</a></li>
+              <li><hr class="dropdown-divider"/></li>
+              <li><a class="dropdown-item" href="Videos.html">Videos</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Contact.html">Contact</a>
+          </li>
+          <!--<li class="nav-item">
+            <a class="nav-link disabled">Disabled</a>
+          </li>-->
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2 searchBar" type="search" placeholder="Search" aria-label="Search"/>
+          <a href="search.html">
+            <button class="btn btn-outline-success searchButton" type="button">Search</button>
+          </a>
+        </form>
+      </div>
+    </div>
+  </nav>
+</div>
+<div class="breaks" id="firstBreak">
   <br />
 </div>
 
-<div style="background-color: #C7C5C5">
+<div class="breaks" id="secondBreak">
   <br />
 </div>
 
@@ -134,8 +179,7 @@
 </div>
 
 <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
-
-</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<script type="module" src="javascript/globalScript.js"></script>
 </body>
 </html>
