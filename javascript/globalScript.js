@@ -145,51 +145,7 @@ function ALARM () {
     window.alert('I Bims \n Un du bimst nun gehackt!');
 }
 
-
-
-//modal for pictures --> Still working
-
-/*function modalAppearance() {
-    modal.style.display = "flex";
-    modalText.innerHTML = "You Lost! You ate " + appleCounter + " Apples. <br> The size of your snake was: " + size + ".<br> You died because of: " + deathReason;
-    modalCloseButton.onclick = function () {
-        modal.style.display = "none";
-    }
-    modalResetButton.onclick = function () {
-    }
-}*/
-
 //API TestArea
-
-/*// Create a request variable and assign a new XMLHttpRequest object to it.
-var request = new XMLHttpRequest()
-
-// Open a new connection, using the GET request on the URL endpoint
-request.open('GET', 'https://ghibliapi.herokuapp.com/films', true)
-
-request.onload = function () {
-    // Begin accessing JSON data here
-}
-
-// Send request
-request.send()
-
-
-async function getData() {
-    const response = await fetch('https://ghibliapi.herokuapp.com/films')
-    const data = await response.json()
-}
-
-// Begin accessing JSON data here
-let data = JSON.parse(this.response)
-
-if (request.status >= 200 && request.status < 400) {
-    data.forEach(movie => {
-        console.log(movie.title)
-    })
-} else {
-    console.log('error')
-}*/
 
 const doesSearchResultsExist = !!document.getElementById('root');
 
@@ -223,7 +179,8 @@ if (doesSearchResultsExist === true) {
                 card.appendChild(h1)
                 card.appendChild(p)
             })
-        } else {
+        }
+        if (request.status < 200 || request.status >= 400){
             const errorMessage = document.createElement('marquee')
             errorMessage.textContent = `Gah, it's not working!`
             app.appendChild(errorMessage)
