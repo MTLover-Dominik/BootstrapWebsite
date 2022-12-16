@@ -60,10 +60,7 @@
     text-decoration: underline;
     text-align: center;
     align-self: center;
-    margin-left: 28%;
 }
 .colorModeArea {
     display: flex;
-    margin-left: 25%;
-    margin-right: 2%;
 }

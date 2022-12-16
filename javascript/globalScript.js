@@ -1,5 +1,6 @@
 import * as config from "./settings.js";
 import { getDarkmode } from "./moduleDarkmode.js";
+import {setupMechanisms} from "./decisionMaker.js";
 
 config.darkModeChanger.addEventListener("click", () => {
     getDarkmode();
@@ -13,12 +14,13 @@ function ALARM () {
     window.alert('I Bims \n Un du bimst nun gehackt!');
 }
 
+if (config.doesBestaetigenButtonExist === true) {
+    config.bestaetigenButton.addEventListener('click', setupMechanisms, false);
+}
+
 //Monitor navigationbar and add a sticky navigationbar
 
-
-
-
-
+//doesNumbersExist();   //funktion zur abfrage ob element existiert
 
 
 

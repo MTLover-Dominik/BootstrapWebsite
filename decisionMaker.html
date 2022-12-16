@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/images/icons/icon.jpg"/>
+    <link href="styles/origin.css" type="text/css" rel="stylesheet">
+
+    <title>Decision Maker</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<body id="bodySite">
+  <div class="titleOfTheSite" id="header">
+    <div class="setElementToFlex">
+      <a href="index.html">
+        <img src="images/icons/tstyTrue64.png" alt="CompanyLogo" class="stylingOfCompanyLogo">
+      </a>
+    </div>
+    <div class="setElementToFlex">
+      <h1 class="firstHeader1">Decision Maker</h1>
+    </div>
+    <div class="setElementToFlex colorModeArea">
+      <img src="images/nightmode.png" alt="Change to darkmode" class="colorMode" id="modeChanger">
+    </div>
+  </div>
+
+  <div class="breaks">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-light" id="navigationBar">
+      <div class="container-fluid startNavBar">
+        <a class="navbar-brand">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Gallery
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="Pictures1.html">Pictures</a></li>
+                <li><a class="dropdown-item" href="Gifs.html">Gifs</a></li>
+                <li><hr class="dropdown-divider"/></li>
+                <li><a class="dropdown-item" href="Videos.html">Videos</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active">Decision Maker</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2 searchBar" type="search" placeholder="Search" aria-label="Search"/>
+            <a href="search.html">
+              <button class="btn btn-outline-success searchButton" type="button">Search</button>
+            </a>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg bg-light" id="navigationBarSticky">
+      <div class="container-fluid startNavBar">
+        <a class="navbar-brand">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Gallery
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="Pictures1.html">Pictures</a></li>
+                <li><a class="dropdown-item" href="Gifs.html">Gifs</a></li>
+                <li><hr class="dropdown-divider"/></li>
+                <li><a class="dropdown-item" href="Videos.html">Videos</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Contact.html">Contact</a>
+            </li>
+            <!--<li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>-->
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2 searchBar" type="search" placeholder="Search" aria-label="Search"/>
+            <a href="search.html">
+              <button class="btn btn-outline-success searchButton" type="button">Search</button>
+            </a>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="breaks" id="firstBreak">
+    <br />
+  </div>
+
+  <div class="breaks" id="secondBreak">
+    <br />
+  </div>
+
+  <div id="contentContainer">
+    <!-- breadcrumbs -->
+    <div class="breadcrumbsDiv">
+      <nav aria-label="breadcrumb" id="breadcrumbs">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Homepage</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Decision Maker</li>
+        </ol>
+      </nav>
+    </div>
+
+    <!-- Galery Headline and Info -->
+    <div id="headlineAndInfo">
+      <h2>This is the Decision Maker</h2>
+      <br />
+      <p>Here can you insert, what you want to do and from the things you inserted, a selection will be made by random.</p>
+      <p class="importantParagraph">Not more than 5 Decisions</p>
+      <hr class="contentHorizontalRule"/>
+    </div>
+
+    <div class="numberSelector">
+      <p class="numberSelectorItem">Anzahl der Entscheidungsmöglichkeiten</p>
+      <input aria-label="hi" type="number" value="1" max="5" name="numberDecisions" min="1" class="numberSelectorItem inputFields" id="numberOfDecisions">
+      <button type="button" class="btn btn-primary numberSelectorItem" id="bestaetigenButton">Bestätigen</button>
+    </div>
+
+    <div class="listOfCards inputFields" id="inputCards">
+      <div class="card fieldsOfInput" style="width: 18rem;" id="inputField1">
+          <div class="card-body">
+            <label class="inputFieldText">decision 1</label>
+            <br/>
+            <input aria-label="inputField" type="text" class="inputFieldItself" id="firstInput" pattern="[a-zA-Z]">
+          </div>
+      </div>
+      <div class="card fieldsOfInput" style="width: 18rem;" id="inputField2">
+        <div class="card-body">
+          <label class="inputFieldText">decision 2</label>
+          <br/>
+          <input aria-label="inputField" type="text" class="inputFieldItself" id="secondInput">
+        </div>
+      </div>
+      <div class="card fieldsOfInput" style="width: 18rem;" id="inputField3">
+        <div class="card-body">
+          <label class="inputFieldText">decision 3</label>
+          <br/>
+          <input aria-label="inputField" type="text" class="inputFieldItself" id="thirdInput">
+        </div>
+      </div>
+      <div class="card fieldsOfInput" style="width: 18rem;" id="inputField4">
+        <div class="card-body">
+          <label class="inputFieldText">decision 4</label>
+          <br/>
+          <input aria-label="inputField" type="text" class="inputFieldItself" id="fourthInput">
+        </div>
+      </div>
+      <div class="card fieldsOfInput" style="width: 18rem;" id="inputField5">
+        <div class="card-body">
+          <label class="inputFieldText">decision 5</label>
+          <br/>
+          <input aria-label="inputField" type="text" class="inputFieldItself" id="fifthInput">
+        </div>
+      </div>
+    </div>
+
+    <div class="listOfCards">
+      <div class="card outputDecisions" style="width: 40rem;">
+        <div class="card-body winnerField">
+          <h5 class="card-title decisionText placingHeadline">Gewinner!</h5>
+          <p class="card-text decisionText" id="winnerText">Here is your decision</p>
+        </div>
+      </div>
+      <!--<div class="card outputDecisions" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title decisionText placingHeadline">Platzierung</h5>
+          <p class="card-text decisionText">Here is your decision</p>
+        </div>
+      </div>
+      <div class="card outputDecisions" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title decisionText placingHeadline">Platzierung</h5>
+          <p class="card-text decisionText">Here is your decision</p>
+        </div>
+      </div>
+      <div class="card outputDecisions" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title decisionText placingHeadline">Platzierung</h5>
+          <p class="card-text decisionText">Here is your decision</p>
+        </div>
+      </div>
+      <div class="card outputDecisions" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title decisionText placingHeadline">Platzierung</h5>
+          <p class="card-text decisionText">Here is your decision</p>
+        </div>
+      </div>-->
+    </div>
+
+    <div id="decisionMakerInputFields">
+
+    </div>
+
+    <hr class="contentHorizontalRule"/>
+  </div>
+
+    <!-- Footer -->
+    <div class="titleOfTheSite" id="footer">
+      <div>
+        <h5><a href="Infos.html" class="ankerFooter">About us</a></h5>
+        <p><a href="Careers.html" class="ankerFooter">Career</a></p>
+        <p><a href="locations.html" class="ankerFooter">Our Locations</a></p>
+      </div>
+      <hr class="horizontalRuleFooter"/>
+      <div>
+        <h5>Corona Information</h5>
+        <p><a href="News.html" class="ankerFooter">Latest News</a></p>
+      </div>
+      <hr class="horizontalRuleFooter"/>
+      <div>
+        <h5>Contact us</h5>
+        <p><a href="Contact.html" class="ankerFooter">How to contact us</a></p>
+      </div>
+      <div>
+        <p>Copyright &copy; 2022 Dominik G&ouml;tz</p>
+      </div>
+    </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <script type="module" src="javascript/globalScript.js"></script>
+</body>
+</html>
