@@ -4,7 +4,7 @@ import * as config from "./settings.js";
 
 let darkMode = localStorage.getItem("dark-mode");
 
-const enableDarkMode = () => {
+function enableDarkMode () {
     if (config.doesHeaderExist === true) {
         config.siteHeader.style.backgroundColor = '#838282';
     }
@@ -48,10 +48,9 @@ const enableDarkMode = () => {
         config.headLine.style.color = 'black';
     }
     localStorage.setItem("dark-mode", "enabled");
-};
+}
 
-
-const disableDarkMode = () => {
+function disableDarkMode () {
     if (config.doesHeaderExist === true) {
         config.siteHeader.style.backgroundColor = 'white';
     }
@@ -92,13 +91,18 @@ const disableDarkMode = () => {
         config.darkModeChanger.setAttribute('src', 'images/nightmode.png');
     }
     localStorage.setItem("dark-mode", "disabled");
-};
-
-if (darkMode === "enabled") {
-    enableDarkMode();
 }
 
-export function getDarkmode () {
+if (darkMode || "enabled") {
+    if (darkMode || "disabled") {
+        if (darkMode === null) {
+            darkMode = "disabled";
+        }
+    }
+}
+
+export function getDarkMode () {
+    console.log("I bims da darkmode: " + darkMode);
     darkMode = localStorage.getItem("dark-mode");
     if (darkMode === "disabled") {
         enableDarkMode();

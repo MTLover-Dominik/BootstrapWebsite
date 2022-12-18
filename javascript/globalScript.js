@@ -1,10 +1,10 @@
 import * as config from "./settings.js";
-import { getDarkmode } from "./moduleDarkmode.js";
+import {getDarkMode} from "./moduleDarkmode.js";
 import {setupMechanisms} from "./decisionMaker.js";
 
-config.darkModeChanger.addEventListener("click", () => {
-    getDarkmode();
-});
+if (config.doesDarkmodeChangerExist === true) {
+    config.darkModeChanger.addEventListener("click", getDarkMode, false);
+}
 
 if (config.doesHomepageButtonExist === true) {
     config.buttonHomepage.addEventListener( 'click' , ALARM );

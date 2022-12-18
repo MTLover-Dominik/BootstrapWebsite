@@ -19,6 +19,7 @@ export function setupMechanisms () {
     setInputValues();
     getNumberValue();
     setWinningDecision();
+    console.log("Die entscheidung: " + randomNumber);
 }
 
 function gettingElement() {
